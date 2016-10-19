@@ -1,5 +1,6 @@
 package com.example.glide;
 
+import android.animation.ObjectAnimator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -27,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         Glide.with(this)
                 .load(R.drawable.vader)
-                .crossFade(5000)
                 .centerCrop()
+                .animate(R.anim.animate_image_2)
                 .into(imageView2);
     }
 }
